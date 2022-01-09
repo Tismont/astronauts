@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+body {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+input {
+  align-self: center;
+  width: 180px;
+  height: 30px;
+  font-size: 17px;
+  margin: 20px;
+}
+
+.submitButton {
+  width: 100px;
+  height: 30px;
+}
+
+table {
+  margin: auto;
+  margin-top: 50px;
+  width: 60%;
+  font-size: 25px;
+  border: 1px solid black;
+}
+  
+th {
+  height: 80px;
+}
+  
+td {
+  text-align: center;
+}
+
+.tableHead {
+  font-size: 23px;
+  border-bottom: 1px solid black; 
+  font-weight: 400;
+  font-style: italic
+}
+
+.delete {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.formText {
+  font-size: 23px;
+  font-weight: 600;
+}

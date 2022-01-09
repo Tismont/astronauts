@@ -1,0 +1,8 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/cb773e41-a246-45f6-9bee-df26ccbf4178/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/AstronautsProject",
+  "appService.deploySubpath": ".",
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ]
+}
