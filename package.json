@@ -1,0 +1,22 @@
+{
+  "name": "astronauti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tismont/astronauts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tismont/astronauts/issues"
+  },
+  "homepage": "https://github.com/Tismont/astronauts#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

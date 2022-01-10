@@ -14,7 +14,7 @@ function SubmitForm(props) {
   function submitForm(e) {
     e.preventDefault();
     props.addAstronaut(id, firstName, lastName, superpower, dateBirth);
-    setId(genRanHex(24))
+    setId(genRanHex(24));
     setFirstName('');
     setLastName('');
     setDateBirth('');

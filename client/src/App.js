@@ -15,7 +15,7 @@ function App(props) {
   }, []);
 
   function addAstronaut(id, firstName, lastName, superpower, dateBirth) {
-    const newAstronaut = { id: id, firstName: firstName, lastName: lastName, superpower: superpower, dateBirth: dateBirth }
+    const newAstronaut = { id: id, firstName: firstName, lastName: lastName, superpower: superpower, dateBirth: dateBirth };
     Axios.post("http://localhost:3001/insert", {
       id: id,
       firstName: firstName,
@@ -24,12 +24,12 @@ function App(props) {
       dateBirth: dateBirth,
       key: id,
     });
-    setAstronautState([...astronautState, newAstronaut])
+    setAstronautState([...astronautState, newAstronaut]);
   }
 
   const astronautList = astronautState.map(el => ( 
     <TableComp id={el.id} firstName={el.firstName} lastName={el.lastName} superpower={el.superpower} dateBirth={el.dateBirth} key={el.id} deleteAstronaut={deleteAstronaut} /> 
-    ))
+    ));
 
   function deleteAstronaut(id) {
     Axios.delete(`http://localhost:3001/delete/${id}`);
