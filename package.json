@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\" "
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Tismont/Astronauts/issues"
   },
-  "homepage": "https://github.com/Tismont/Astronauts#readme"
+  "homepage": "https://github.com/Tismont/Astronauts#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
 }
