@@ -22,7 +22,7 @@ app.post("/insert", async (req, res) => {
   const dateBirth = req.body.dateBirth;
   const key = req.body.key;
 
-  const Astronaut = new AstronautModel({id: id, firstName: firstName, lastName: lastName, superpower: superpower, dateBirth: dateBirth,key: key});
+  const Astronaut = new AstronautModel({id: id, firstName: firstName, lastName: lastName, superpower: superpower, dateBirth: dateBirth, key: key});
 
   try {
     await Astronaut.save();

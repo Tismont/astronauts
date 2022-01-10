@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import TableComp from './src/TableComp';
 import SubmitForm from './src/SubmitForm';
-import { nanoid } from 'nanoid';
 import Axios from 'axios';
 
 function App(props) {
@@ -14,7 +13,6 @@ function App(props) {
     setAstronautState(response.data)
     })
   }, []);
-
 
   function addAstronaut(id, firstName, lastName, superpower, dateBirth) {
     const newAstronaut = { id: id, firstName: firstName, lastName: lastName, superpower: superpower, dateBirth: dateBirth }
@@ -34,25 +32,25 @@ function App(props) {
     ))
 
   function deleteAstronaut(id) {
-    Axios.delete(`http://localhost:3001/delete/${id}`)
-    const remainingAstronauts = astronautState.filter(el => id !== el.id)
-    setAstronautState(remainingAstronauts) 
+    Axios.delete(`http://localhost:3001/delete/${id}`);
+    const remainingAstronauts = astronautState.filter(el => id !== el.id);
+    setAstronautState(remainingAstronauts);
     }
-  
+
   return (
     <div className="App">
-      <p>
+      <h2 className="heading">
         Astronauts
-      </p>
+      </h2>
       <SubmitForm addAstronaut={addAstronaut} />
       <table>
-         <tbody>
-        <tr>
-          <th className="tableHead">Firstname</th>
-          <th className="tableHead">Lastname</th>
-          <th className="tableHead">Superpower</th>
-          <th className="tableHead">Date of Birth</th>
-        </tr>
+        <tbody>
+          <tr>
+            <th className="tableHead">Firstname</th>
+            <th className="tableHead">Lastname</th>
+            <th className="tableHead">Superpower</th>
+            <th className="tableHead">Date of Birth</th>
+          </tr>
         </tbody>
         {astronautList}
       </table>

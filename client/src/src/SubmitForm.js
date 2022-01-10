@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../App.css';
-import { nanoid } from 'nanoid';
 
 function SubmitForm(props) {
 
@@ -11,8 +10,6 @@ function SubmitForm(props) {
   const [lastName, setLastName] = useState('');
   const [superpower, setSuperpower] = useState('');
   const [dateBirth, setDateBirth] = useState('');
-
-
 
   function submitForm(e) {
     e.preventDefault();
