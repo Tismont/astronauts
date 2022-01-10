@@ -1,0 +1,19 @@
+{
+  "name": "astronauti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tismont/Astronauts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tismont/Astronauts/issues"
+  },
+  "homepage": "https://github.com/Tismont/Astronauts#readme"
+}
